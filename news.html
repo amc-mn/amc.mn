@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News & Events — AMC</title>
+  <link rel="icon" href="assets/img/logo-placeholder.svg">
+
+  <style>
+    :root{
+      --navy:#0b2545;
+      --blue:#2060a8;
+      --white:#ffffff;
+      --muted:#6b7280;
+      --radius:10px;
+      --container:1100px;
+    }
+    *{box-sizing:border-box;}
+    body{font-family:Inter, Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; margin:0; color:#10223a; background:#fff;}
+    .container{max-width:var(--container); margin:0 auto; padding:28px;}
+    .site-header{background:linear-gradient(180deg, rgba(11,37,69,0.96), rgba(11,37,69,0.98)); color:var(--white);}
+    .header-inner{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;}
+    .brand img{height:40px;}
+    .main-nav a{color:var(--white); text-decoration:none; margin:0 12px; font-weight:600;}
+    .page-content{padding:36px 0;}
+    .card-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px;}
+    .card{background:#f8fafc; border-radius:12px; padding:18px;}
+    .btn-outline{border:2px solid var(--navy); color:var(--navy); background:transparent; text-decoration:none; padding:8px 14px; border-radius:8px; display:inline-block; margin-top:8px;}
+    .site-footer{background:#f7fafc; padding:20px 0; margin-top:40px;}
+    .footer-inner{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;}
+    @media (max-width:900px){
+      .header-inner{flex-direction:column;}
+      .main-nav{margin-top:12px;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/img/logo-placeholder.svg" alt="AMC logo" height="40"></a>
+      <nav class="main-nav">
+        <a href="index.html">Home / Нүүр</a>
+        <a href="about.html">About / Тухай</a>
+        <a href="news.html">News & Events / Мэдээ ба Арга хэмжээ</a>
+        <a href="contact.html">Contact / Холбоо барих</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <main class="container page-content">
+    <h1>News & Events / Мэдээ ба Арга хэмжээ</h1>
+
+    <section class="card-grid">
+      <article class="card">
+        <h3>AMC welcomed guest speaker from ABC Capital / AMC нь ABC Capital-ы зочин илтгэгчийг хүлээн авлаа</h3>
+        <small>2025-09-12</small>
+        <p>A talk on real-world asset allocation by an industry practitioner.<br>Салбарын мэргэжилтний хөрөнгө хуваарилалтын практик илтгэл.</p>
+        <a class="btn-outline" href="#">Read / Дэлгэрэнгүй</a>
+      </article>
+      <article class="card">
+        <h3>Intro to Asset Management Workshop / Хөрөнгө Удирдлагын Танилцууламж Үйл Ажиллагаа</h3>
+        <small>2025-10-20</small>
+        <p>Hands-on workshop: portfolio basics and valuation methods.<br>Портфолийн үндэс, үнэлгээний аргуудын практик семинар.</p>
+        <a class="btn-outline" href="#">Read / Дэлгэрэнгүй</a>
+      </article>
+      <article class="card">
+        <h3>Student Investment Challenge / Оюутны Хөрөнгө Оруулалтын Уралдаан</h3>
+        <small>2025-11-05</small>
+        <p>Compete in teams to build the best simulated portfolio.<br>Багийн мөргөлдөөн: хамгийн сайн симуляцийн портфолио бүтээх.</p>
+        <a class="btn-outline" href="#">Read / Дэлгэрэнгүй</a>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="assets/img/logo-placeholder.svg" alt="AMC logo" height="36">
+        <p>&copy; 2025 Asset Management Club — AMC</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.instagram.com/amc_mn" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/assetmanagementstudentclub" target="_blank">Facebook</a>
+        <a href="mailto:assetmanagementclubmn@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
