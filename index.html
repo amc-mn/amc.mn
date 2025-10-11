@@ -1,150 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Asset Management Club — Home</title>
-<link rel="icon" href="logo.png">
-<style>
-  :root {
-    --navy: #001f3f;    /* deep navy blue main theme */
-    --blue: #0074D9;    /* accent blue */
-    --white: #ffffff;
-    --muted: #cbd5e1;
-    --radius: 10px;
-    --container: 1100px;
-  }
-
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: Inter, Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; color: #10223a; background: #fff; }
-  .container { max-width: var(--container); margin: 0 auto; padding: 24px; }
-  
-  /* Header */
-  .site-header { background: var(--navy); color: var(--white); }
-  .header-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 12px 0; }
-  .brand img { height: 40px; }
-  .main-nav a { color: var(--white); text-decoration: none; margin: 0 12px; font-weight: 600; }
-  .lang-btn { background: transparent; border: 1px solid rgba(255,255,255,0.3); color: var(--white); padding: 6px 10px; border-radius: 6px; cursor: pointer; }
-
-  /* Hero */
-  .hero { display: flex; align-items: center; justify-content: space-between; padding: 40px 0; flex-wrap: wrap; }
-  .hero-card { flex: 1; min-width: 280px; }
-  .hero-card h1 { font-size: 2rem; margin-bottom: 12px; color: var(--navy); }
-  .hero-card p { color: var(--muted); margin-bottom: 16px; }
-  .cta-row a { display: inline-block; margin-right: 12px; margin-bottom: 8px; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: 600; }
-  .btn-primary { background: var(--navy); color: var(--white); }
-  .btn-outline { border: 2px solid var(--navy); color: var(--navy); background: transparent; }
-  .badge { background: var(--blue); color: var(--white); padding: 16px; border-radius: 12px; margin-left: 24px; flex-shrink: 0; text-align: center; min-width: 200px; }
-
-  /* Features */
-  .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 32px; }
-  .feature { background: #f8fafc; padding: 18px; border-radius: var(--radius); }
-
-  /* Latest news */
-  .latest { margin-top: 36px; }
-  .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 16px; }
-  .card { background: #fff; border: 1px solid #e6eef6; padding: 18px; border-radius: var(--radius); }
-
-  /* Footer */
-  .site-footer { background: #f7fafc; padding: 20px 0; margin-top: 40px; }
-  .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-  .footer-inner img { height: 36px; }
-
-  /* Page content */
-  .page-content { padding: 36px 0; }
-
-  /* Mobile responsiveness */
-  @media (max-width: 900px) {
-    .main-nav { width: 100%; margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
-    .hero { flex-direction: column; text-align: center; }
-    .badge { margin-left: 0; margin-top: 16px; }
-    .features { grid-template-columns: 1fr; }
-    .card-grid { grid-template-columns: 1fr; }
-  }
-</style>
+<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-
-<!-- Header -->
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="index.html"><img src="logo.png" alt="AMC logo"></a>
+    <a class="brand" href="index.html"><img src="assets/img/AMC-No-background.png" alt="AMC logo" height="40"></a>
     <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="news.html">News & Events</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <button class="lang-btn" id="langToggle">EN / MN</button>
   </div>
 </header>
 
-<!-- Hero Section -->
-<main class="container">
-  <section class="hero">
-    <div class="hero-card">
-      <h1>Asset Management Club (AMC)</h1>
-      <p>The student-run club for finance enthusiasts — workshops, research, and practical investing skills.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="about.html">Learn more</a>
-        <a class="btn btn-outline" href="news.html">News & Events</a>
-      </div>
+<main>
+<section class="hero">
+  <div class="container hero-card">
+    <h1>Asset Management Club (AMC)</h1>
+    <p>The student-run club for finance enthusiasts — workshops, research, and practical investing skills.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="about.html">Learn More</a>
+      <a class="btn btn-outline" href="news.html">News & Events</a>
     </div>
-    <aside class="badge">
-      <p>University of Finance and Economics<br>National University of Mongolia</p>
-    </aside>
-  </section>
+  </div>
+</section>
 
-  <!-- Features -->
-  <section class="features">
-    <div class="feature">
-      <h3>Education & Workshops</h3>
-      <p>Practical workshops on investing, financial modelling, and asset allocation.</p>
-    </div>
-    <div class="feature">
-      <h3>Research Projects</h3>
-      <p>Student-led research and portfolio challenges to build professional skills.</p>
-    </div>
-    <div class="feature">
-      <h3>Networking</h3>
-      <p>Connect with alumni, industry speakers, and like-minded peers.</p>
-    </div>
-  </section>
+<section class="features container">
+  <article class="feature">
+    <h3>Education & Workshops</h3>
+    <p>Practical workshops on investing, financial modelling and asset allocation.</p>
+  </article>
+  <article class="feature">
+    <h3>Research Projects</h3>
+    <p>Student-led research and portfolio challenges to build professional skills.</p>
+  </article>
+  <article class="feature">
+    <h3>Networking</h3>
+    <p>Connect with alumni, industry speakers and like-minded peers.</p>
+  </article>
+</section>
 
-  <!-- Latest News -->
-  <section class="latest">
-    <h2>Latest News</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h4>AMC welcomed guest speaker from ABC Capital</h4>
-        <small>2025-09-12</small>
-        <p>A talk on real-world asset allocation by an industry practitioner.</p>
-        <a class="btn btn-outline" href="#">Read</a>
-      </div>
-      <div class="card">
-        <h4>Intro to Asset Management Workshop</h4>
-        <small>2025-10-20</small>
-        <p>Hands-on workshop: portfolio basics and valuation methods.</p>
-        <a class="btn btn-outline" href="#">Read</a>
-      </div>
-    </div>
-  </section>
+<section class="latest container">
+  <h2>Latest News</h2>
+  <div id="latestList" class="card-grid"></div>
+</section>
 </main>
 
-<!-- Footer -->
 <footer class="site-footer">
   <div class="container footer-inner">
-    <div>
-      <img src="logo.png" alt="AMC logo">
-      <p>&copy; 2025 Asset Management Club — AMC</p>
-    </div>
-    <div>
-      <a href="https://www.instagram.com/amc_mn" target="_blank">Instagram</a> |
-      <a href="https://www.facebook.com/assetmanagementstudentclub" target="_blank">Facebook</a> |
-      <a href="mailto:assetmanagementclubmn@gmail.com">Email</a>
-    </div>
+    <p>&copy; <span id="year"></span> Asset Management Club — AMC</p>
   </div>
 </footer>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>
