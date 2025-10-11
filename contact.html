@@ -1,85 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — AMC</title>
-  <link rel="icon" href="logo.png">
-  <style>
-    :root{
-      --navy:#0b2545;
-      --blue:#2060a8;
-      --white:#ffffff;
-      --muted:#6b7280;
-      --radius:10px;
-      --container:1100px;
-    }
-    *{box-sizing:border-box;}
-    body{font-family:Inter, Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; margin:0; color:#10223a; background:#fff;}
-    .container{max-width:var(--container); margin:0 auto; padding:28px;}
-    .site-header{background:linear-gradient(180deg, rgba(11,37,69,0.96), rgba(11,37,69,0.98)); color:var(--white);}
-    .header-inner{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;}
-    .brand img{height:40px;}
-    .main-nav a{color:var(--white); text-decoration:none; margin:0 12px; font-weight:600;}
-    .page-content{padding:36px 0;}
-    .contact-cards{display:flex; gap:20px; flex-wrap:wrap;}
-    .card{background:#fff; border:1px solid #e6eef6; padding:18px; border-radius:12px; flex:1 1 300px;}
-    iframe{width:100%; border:none; border-radius:12px;}
-    .site-footer{background:#f7fafc; padding:20px 0; margin-top:40px;}
-    .footer-inner{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;}
-    @media (max-width:900px){
-      .header-inner{flex-direction:column;}
-      .main-nav{margin-top:12px;}
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — AMC</title>
+<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html"><img src="logo.png" alt="AMC logo"></a>
-      <nav class="main-nav">
-        <a href="index.html">Home / Нүүр</a>
-        <a href="about.html">About / Тухай</a>
-        <a href="news.html">News & Events / Мэдээ ба Арга хэмжээ</a>
-        <a href="contact.html">Contact / Холбоо барих</a>
-      </nav>
-    </div>
-  </header>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><img src="assets/img/AMC-No-background.png" alt="AMC logo" height="40"></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="news.html">News & Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- Main Content -->
-  <main class="container page-content">
-    <h1>Contact Us / Холбоо барих</h1>
+<main class="container page-content contact-page">
+<h1>Contact Us</h1>
 
-    <section class="contact-cards">
-      <div class="card">
-        <h3>Follow Us / Биднийг дага</h3>
-        <p><a href="https://www.instagram.com/amc_mn" target="_blank">@amc_mn — Instagram</a></p>
-        <p><a href="https://www.facebook.com/assetmanagementstudentclub" target="_blank">Asset Management Student Club — Facebook</a></p>
-        <p>Email: <a href="mailto:assetmanagementclubmn@gmail.com">assetmanagementclubmn@gmail.com</a></p>
-      </div>
+<section class="contact-cards">
+  <div class="contact-item">
+    <img src="assets/icons/instagram.svg" alt="Instagram" width="24">
+    <a href="https://www.instagram.com/amc_mn" target="_blank">@amc_mn</a>
+  </div>
+  <div class="contact-item">
+    <img src="assets/icons/facebook.svg" alt="Facebook" width="24">
+    <a href="https://www.facebook.com/assetmanagementstudentclub" target="_blank">Asset Management Club</a>
+  </div>
+  <div class="contact-item">
+    <img src="assets/icons/email.svg" alt="Email" width="24">
+    <a href="mailto:assetmanagementclubmn@gmail.com">Email us</a>
+  </div>
+</section>
+</main>
 
-      <div class="card">
-        <h3>Join the Club / Клубт нэгдэх</h3>
-        <!-- Replace below URL with your Google Form embed link -->
-        <iframe src="https://docs.google.com/forms/d/e/REPLACE_WITH_YOUR_FORM/viewform?embedded=true" height="480">Loading…</iframe>
-      </div>
-    </section>
-  </main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Asset Management Club — AMC</p>
+  </div>
+</footer>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <img src="logo.png" alt="AMC logo" height="36">
-        <p>&copy; 2025 Asset Management Club — AMC</p>
-      </div>
-      <div>
-        <a href="https://www.instagram.com/amc_mn" target="_blank">Instagram</a> |
-        <a href="https://www.facebook.com/assetmanagementstudentclub" target="_blank">Facebook</a> |
-        <a href="mailto:assetmanagementclubmn@gmail.com">Email</a>
-      </div>
-    </div>
-  </footer>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
