@@ -1,5 +1,5 @@
 async function fetchNews(){
-  const sheetURL = 'YOUR_GOOGLE_SHEET_CSV_URL';
+  const sheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR74H2efPCcjjtdTUMLTLOC_YKCa9quYFN_jIM0r5g11HvQAq5-fdOixmvdDXGDZNCOky3YUvMgS1Xh/pub?output=csv';
   try{
     const res = await fetch(sheetURL);
     const csv = await res.text();
