@@ -29,3 +29,17 @@ a:hover{text-decoration:underline;}
 .contact-item{display:flex;align-items:center;gap:8px;}
 .contact-item img{filter:invert(100%);}
 @media (max-width:900px){.features{grid-template-columns:1fr;}.header-inner{flex-direction:column;align-items:flex-start;}.main-nav{margin-top:12px;}}
+
+/* Logo size control */
+.brand img {
+  height: 60px;          /* standard desktop size */
+  width: auto;            /* keeps proportions */
+  object-fit: contain;
+}
+
+/* Smaller logo on phones */
+@media (max-width: 768px) {
+  .brand img {
+    height: 45px;
+  }
+}
